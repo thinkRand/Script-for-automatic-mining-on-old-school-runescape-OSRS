@@ -1,0 +1,49 @@
+Copyright (C)  2022 Abel Granados
+
+Controles:
+
+ALT + i 	Iniciar el minado, primero defína las areas
+ALT + d 	Detener el script 
+ALT + a 	Definir un area
+ALT + p 	Pausar 
+ALT + r 	Resetear las areas
+ALT + c 	Cerrar el script
+
+Instrucciones:
+
+Obligatoriamente la ventana de RuneLite debe estar en pantalla completa y el cliente debe estar configurado en moder-layout o el inventario quedara descolocado probocando inpresicion de clics. Este script solo funciona con RuneLite, no ha sido probado en OSbuddy o el cliente oficial. Tampoco se ha probado en sistemas anteriores a windows7 o versiones de linux.
+
+Para iniciar debes definir un area que contenga una roca con iron, cooper o clay. Para definir una roca sigue los siguientes pasos: 
+	
+Paso 1 - Busca la roca que quieres minar y coloca el puntero del mouse en una de sus esquinas, luego preciona Control + a, esto tomara la primera esquina del area. 
+	
+Paso 2 - Preciona Control + a cuando tengas el puntero del mouse sobre la segunda esquina del area que quieres definir. 
+
+Un area se construye con dos puntos que formen un cuadrado. Si defines un area muy grande, por ejemplo que contenga una roca y terreno vacío, es probable que se haga un "MissClick", para evitarlo asegurate de crear areas que sean del tamaño de las rocas o mas pequeñas. Puedes crear areas pequeñas dentro de una roca para aumentar la precisión, aunque esto reduce las probabilidades de detectar un mineral correctamente estarias evitando zonas por donde puede superponerse un objeto, por ejemplo los pícos u otros jugadores.
+
+El script está pensado para minar de una hasta tres rocas y solo si el personaje no se mueve de la casilla de donde está. Evíte crear areas que esten muy alejadas entre si o el personaje podría salirse de lugar y requerir una recolocación.
+
+El script usa la ultima celda del inventario para saber si està lleno, por eso no funcionara bien si tiene algun item en esa celda (la celda de mas abajo y a la derecha).
+
+La primera celda del inventario es para tener un picaxe, por eso se botan los minerales desde la celda 2 hasta la ultima.
+
+Si ves algo raro y quieres que lo arregle, puedes enviar los errores y sugerencias al gmail o al discord, los links estan abajo
+
+Advertencia:
+
+El uso descuidado puede ocasionar un baneo temporal o permanente. Use bajo su propio riesgo y discreción.
+
+Recomendaciones para evitar un ban:
+
+Usalo en jornadas cortas de entre 1 a 2 horas al día o incluso semanal. No he probado el uso constante, porque sinceramente no tiene caso.
+
+Evite ser reportado mientras mina. Recomiendo minar en zonas vacías, existen un monton de lugares donde nádie mina.
+
+Evite el comportamiento predictivo. Ejemplo, usar el programa todos los días a la misma hora sin hacer mas nada que minar. Que otros jugadores no se den cuenta de que estas haciendo cosas repetitivamente para evitar que te reporten.
+
+
+Con el software tiene la ventaja de solo tener que hacer uno que otro clic, pero no deje al programa sin supervision, ese no es el objetivo. Es necesario que corrija el comportamiento del programa a menudo.
+
+Finalmente recuerde que seguir estas normas no garantisan que no sera baneado. Jagex siempre esta mejorando sus sistemas anti-bots, ¿Cómo podría ser tan facil?. Sin embargo yo use este programa para crear 4 cuentas con 70 de mining en un mes efectivamente. Tambien es cierto que me banearon una con casi 50 de mining en solo dos dias! lol
+
+Este software a requerido mucho trabajo, si te ha sido útil y te sientes agradecido puedes hacerme una donacion.
