@@ -18,7 +18,7 @@ This script will be usefull for you if you want afk mining while studiying or wo
 2. Run the script the first time:
 	When you have ahk installed just double click to run the script, the first time you will see the terms of the licence. Later you will see the instructions of use. 
 
-3. Beging mining where you want.
+3. Beging mining where you want:
 	Go to any place where you want to mine and use the short-cut "alt + a" two times to define an area where a rock is. Later press alt + i to initiate the mining process and you keep afk. (see instructions for more details)
 
 ### Finally
