@@ -22,7 +22,7 @@ This script will be usefull for you if you want afk mining while studiying or wo
 	Go to any place where you want to mine and use the short-cut "alt + a" two times to define an area where a rock is. Later press alt + i to initiate the mining process and you keep afk. (see instructions for more details)
 
 ### Finally
-You are the unique responsible of how you use this script, and for any problem/ ban on your account usign this script. The script is not capable of imit human in a 100% , do not abuse.
+You are the unique responsible of how you use this script, and therefore for any problem/ ban on your account using it. This script do not imitate human in a 100% , do not abuse.
 
 I like to develop this macro with AHK and i will upgrade it over time until it become a very good mining script. I will like to hear you, hit me up on discord and tell me how is going your mining journey.
 
