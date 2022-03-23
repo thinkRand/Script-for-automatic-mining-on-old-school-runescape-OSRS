@@ -35,41 +35,26 @@ GuiHwnd := 0 ;Main window handler, can be one of two options: Licence or Info
 licenceAcepted := "false" ;Flag to indicate if the licence GUI has to be open
 
 ;config.ini has only one line with the word true or false.
-if FileExist("docs/config.ini")
-{
+if FileExist("docs/config.ini") {
 	FileReadLine, licenceAcepted, docs/config.ini, 1
-	if ErrorLevel
-	{
+	if (ErrorLevel) {
 		MsgBox, 0 Error. The program will finish.
 		Exitapp
 	}
-}
-else
-{
+}else{
 	FileAppend , false, docs/config.ini 
-	if ErrorLevel
-	{
+	if (ErrorLevel) {
 		MsgBox, 1 Error. The program will finish.
 		Exitapp
 	}
 } 
 
-;FUNCTIONS OF EACH "INCLUDE" THAT INITIATING THEIR GLOBALS
-ini_link()
-ini_clientInterface()
-ini_areaManager()
-ini_indicatorManager()
 
-if (licenceAcepted == "false")
-{
+if (licenceAcepted == "false"){
 	GoSub createGuiLicence
-}
-else if (licenceAcepted == "true")
-{
+}else if (licenceAcepted == "true"){
 	 GoSub createGuiInfo
-}
-else
-{
+}else{
 	MsgBox, 3 Error. The program will finish.
 	Exitapp
 }
@@ -79,20 +64,17 @@ return
 
 
 createGuiLicence:
-	if FileExist("docs/copying.txt")
-	{
+	if FileExist("docs/copying.txt"){
 		FileRead, FileContents, docs/copying.txt
-		if ErrorLevel
-		{
+		if (ErrorLevel){
 			MsgBox, 4 Error. The program will finish.
 			Exitapp
 		}
-	}
-	else
-	{
+	}else{
 		MsgBox, The copying.txt file does not exist. The program will finish.
 		Exitapp
 	}
+
 	Gui, licence:New, -Resize +MinimizeBox -MaximizeBox +HwndGuiHwnd , Mining_v1.2_BETA licence
 	Gui, licence:Add, edit, vEditlicence readOnly w600 h400, %FileContents% . `n`n
 	FileContents := "" ;I think that it is better to free that memory. I am not sure if this variable will be destroyed when the label end.
@@ -108,8 +90,8 @@ watchCursor(){
 	Global GuiHwnd	
 	MouseGetPos, , , id, control
 	if (GuiHwnd == id){ ;Only when the mouse is over the main window of this script
-		;Static1,2,3,4 and 5 are the names of some Picture Controls on the info window
-		If (control == "Static1" ||control == "Static2"||control == "Static3"||control == "Static4"||control=="Static5"){
+		;Static1,2,3, and 4 are the names of some Picture Controls on the info window
+		If (control == "Static1" ||control == "Static2"||control == "Static3"||control == "Static4"){
 			;mouseHoverPicOn ; has to draw the tooltip if mouse is hover the picture
 			mouseHoverPicOn(control)
 			;Is onPicHover(control) a better name for this function? i am asking because i do not understand English very well. 
@@ -126,8 +108,7 @@ bAccept:
 	FileDelete, docs/config.ini
 	FileAppend , true, docs/config.ini, 
 	
-	if ErrorLevel
-	{
+	if (ErrorLevel) {
 		MsgBox, Error. The program will finish.
 		Exitapp
 	}
@@ -138,17 +119,13 @@ return
 
 createGuiInfo:
 
-	if FileExist("docs/info.txt")
-	{
+	if FileExist("docs/info.txt"){
 		FileRead, FileContents, docs/info.txt
-		if ErrorLevel
-		{
+		if (ErrorLevel){
 			MsgBox, Error. The program will finish.
 			Exitapp
 		}
-	}
-	else
-	{
+	}else{
 		MsgBox, Error. The program will finish.
 		Exitapp
 	}
@@ -170,16 +147,13 @@ return
 mining(){
 	Global
 	static firstExecution := true
-	if firstExecution
-	{
+	if (firstExecution)	{
 		loadInventory()
 		firstExecution := false
 	}
 
-	if INVENTORY_EXIST
-	{
-		if MARKED_AREAS_FILLED
-		{
+	if (INVENTORY_EXIST) {
+		if (MARKED_AREAS_FILLED) {
 			Local userDefinedRocks := MARKED_AREAS ;Assigned it an intuitive alias
 			static identifiedRocks := [] 
 			;All the rocks have to be identified, now
@@ -197,11 +171,10 @@ mining(){
 				Local cellIndicator28 := {x:INVENTORY.cells[28].x + 16, y:INVENTORY.cells[28].y + 16, color:INVENTORY.baseColor} 
 		
 				;Main loop
-				loop, % scriptCicles
+				loop, % scriptCicles 
 				{
 					Local isThereOre := isColorInArea(MARKED_AREAS[rockBeingMined], identifiedRocks[rockBeingMined].indicator.color)
-					if(isThereOre)
-					{
+					if(isThereOre) {
 						;Move pointer to the rock
 						cursorTo(MARKED_AREAS[rockBeingMined])
 						delayMin() ;its trying to simulate a human delay after reach the rock.
@@ -219,12 +192,11 @@ mining(){
 							;if the rock being mining is the last on the list, then the next rock will be the first on the list
 							if(rockBeingMined = rocksCantity){
 								rockBeingMined := 1
-							}
-							else{
+							}else{
 								rockBeingMined++
 							}
-						}
-						else{
+						
+						}else{
 							MsgBox, An extraction has not been detected in a long time. The program will stop.
 							break
 						}
@@ -239,8 +211,7 @@ mining(){
 						;In case of there is not ore, try the next one
 						if(rockBeingMined = rocksCantity){
 							rockBeingMined := 1
-						}
-						else{
+						}else{
 							rockBeingMined++
 						}
 					}
@@ -252,12 +223,11 @@ mining(){
 				MsgBox, Cannot identify all the rocks. Try again. 
 				return 0
 			}
-		}
-		else {
+		}else {
 		  MsgBox You have to define at least one rock in order to run mining.
 		}
-	}
-	else{
+	
+	}else{
 		firstExecution := true ;This is for try to define the inventory again.
 	}
 } ;End of main function
@@ -281,12 +251,10 @@ identifyRocks(userDefinedRocks)
 			}
 		}
 		
-		if (identifiedRocks.length() = userDefinedRocks.length())
-		{
+		if (identifiedRocks.length() = userDefinedRocks.length()) {
 			return identifiedRocks
 		}else{
-			if (attempts > 40)
-			{
+			if (attempts > 40) {
 				return identifiedRocks
 			}
 			attempts++	

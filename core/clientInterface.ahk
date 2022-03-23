@@ -23,7 +23,7 @@
 
 ini_clientInterface(){
 	Global
-	INVENTORY_EXIST := false ;Flag to indicate if the inventory are already created
+	INVENTORY_EXIST := false ;Flag to indicate if the inventory is already created
 	INVENTORY := {}
 	ini_runeLiteWindow()
 }

@@ -21,20 +21,20 @@ class Area{
 
 ini_areaManager(){
 	Global
-	MARKED_AREAS := [] ;To store the areas defined by users
+	MARKED_AREAS := [] ;To store the areas defined by the user
 	MARKED_AREAS_FILLED := false ;Flag to indicate if exists at least one area defined
 }
 
 makeArea(reset := ""){
 	Local
-	Global Area,MARKED_AREAS, MARKED_AREAS_FILLED	
-	static currentPoint := 1 ;
+	Global Area, MARKED_AREAS, MARKED_AREAS_FILLED	
+	static currentPoint := 1 
 	static areasCount := 1
 	x := y := 0
 	if (reset == "reset")
 	{
-		currentPoint = 1
-		areasCount = 1
+		currentPoint := 1
+		areasCount := 1
 		return
 	}
 	
@@ -50,7 +50,7 @@ makeArea(reset := ""){
 	{
 		MARKED_AREAS[areasCount].x2 := x
 		MARKED_AREAS[areasCount].y2 := y
-		;Tranforms the coordinates given into a correct area
+		;Transforms the coordinates given into a correct area
 		if(MARKED_AREAS[areasCount].x1 > MARKED_AREAS[areasCount].x2){
 			aux := MARKED_AREAS[areasCount].x1
 			MARKED_AREAS[areasCount].x1 := MARKED_AREAS[areasCount].x2

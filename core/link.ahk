@@ -12,27 +12,26 @@
 ; You should have received a copy of the GNU General Public License along with this program. If not, see 
 ; <https://www.gnu.org/licenses/>.
 
-
+ini_link()
 
 ini_link(){
 	Local
 	line := "Network:`nBNB Smart Chain (BEP20)`n`nWallet address:`n"
 	line .= "0x4ffe58d307aebd4c1edb26a17b77c991da0f45ff`n`nBNB Wallet: Send only BNB to this address."
-	Global metamaskAddress := "0x25C5f8ea519F29D148C356F077CdDbb983CBD65D", gmail := "infoabelgranados@gmail.com",binance := line, discord := "thinkRand#7433 UID:681695022600814642",gitHub := "https://github.com/thinkRand"
+	Global metamaskAddress := "0x25C5f8ea519F29D148C356F077CdDbb983CBD65D",binance := line, discord := "thinkRand#7433 UID:681695022600814642",gitHub := "https://github.com/thinkRand"
 }
 
 
 link_addAsGroupBox(guiName){
 	Local
 	Static controlPicDiscord := 0, controlPicBinance := 0, controlPicMetamask := 0,controlPicGMail := 0, controlPicGitHub = 0
-	Gui, %guiName%:Add, GroupBox, w600 Center cCCCCCC, Links to Contact and Donations
 	GBWidth := 600
-	PicturesWidth := (5*40) + 10
+	Gui, %guiName%:Add, GroupBox, w%GBWidth% Center cCCCCCC, Links to Contact and Donations
+	PicturesWidth := (4*40) + 10
 	xIni := round((GBWidth/2) - (PicturesWidth/2))
 	Gui, %guiName%:Add,Picture,x%xIni%+10 yp+15 w40 h40 gcontentToClipboard vcontrolPicDiscord, %A_WorkingDir%/img/discord_logo_48.png
 	Gui, %guiName%:Add,Picture,x+10 yp w40 h40 gcontentToClipboard vcontrolPicBinance, %A_WorkingDir%/img/bnb_logo_48_3.png
 	Gui, %guiName%:Add,Picture,x+10 yp w40 h40 gcontentToClipboard vcontrolPicMetamask, %A_WorkingDir%/img/metamask_logo_48_3.png
-	Gui, %guiName%:Add,Picture,x+10 yp w40 h40 gcontentToClipboard vcontrolPicGMail, %A_WorkingDir%/img/gmail_logo_48.png
 	Gui, %guiName%:Add,Picture,x+10 yp w40 h40 gcontentToClipboard vcontrolPicGitHub, %A_WorkingDir%/img/git_logo_48.png 
 }
 
@@ -48,13 +47,12 @@ mouseHoverPicOff(){
 
 contentToClipboard(){
 	Local 
-	Global metamaskAddress, gmail, binance, discord, gitHub
+	Global metamaskAddress, binance, discord, gitHub
 	Switch A_GuiControl
 	{
 		case "controlPicDiscord": Clipboard := discord
 		case "controlPicBinance": Clipboard := binance
 		case "controlPicMetamask": Clipboard := metamaskAddress
-		case "controlPicGMail": Clipboard := gmail
 		case "controlPicGitHub" : Clipboard := gitHub
 		Default:
 		ToolTip, Link invalid.
