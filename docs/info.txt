@@ -4,13 +4,14 @@ Copyright (C)  2022 Abel Granados
 
 Controls:
 
-ALT + i Start mining, first define the areas
-ALT + d Stop the script
-ALT + a Define an area
-ALT + p Pause
-ALT + r Reset areas
-ALT + c Close the script
-Alt + v Shows/Hide the position of the inventory
+ALT + i Starts mining, first define the areas
+ALT + d Stops the script
+ALT + a Defines an area
+ALT + p Pauses
+ALT + r Resets areas
+ALT + c Closes the script
+ALT + v Shows/Hides the position of the inventory
+ALT + l Change language English/Spanish
 
 Instructions:
 

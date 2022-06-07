@@ -8,7 +8,7 @@ ALT + a 	Definir un area
 ALT + p 	Pausar 
 ALT + r 	Resetear las areas
 ALT + c 	Cerrar el script
-
+ALT + l		Cambiar el idioma Españo/Ingles 
 Instrucciones:
 
 la ventana de RuneLite debe estar en pantalla completa obligatoriamente y el cliente debe estar configurado en modern-layout o el inventario quedara descolocado ocacionando inpresicion de clics. Este script solo funciona con RuneLite, no ha sido probado en otros clientes. No se ha probado en sistemas anteriores a windows7 o versiones de linux.
@@ -29,7 +29,7 @@ El script usa la ultima celda del inventario para saber si està lleno, por eso 
 
 La primera celda del inventario es para tener un picaxe, por eso se botan los minerales desde la celda 2 hasta la ultima.
 
-Si ves algo raro y quieres que lo arregle, puedes enviar los errores y sugerencias al gmail o al discord, los links estan abajo
+Si quieres que arregle algo puedes enviarme un mensaje por discord, el link está abajo.
 
 Advertencias:
 
@@ -48,6 +48,3 @@ Con el software tiene la ventaja de solo tener que hacer uno que otro clic, pero
 
 Finalmente recuerde que seguir estas normas no garantisan que no sera baneado. Jagex siempre esta mejorando sus sistemas anti-bots, ¿Cómo podría ser tan facil?. Sin embargo yo use este programa para crear 4 cuentas con 70 de mining en un mes efectivamente. Tambien es cierto que me banearon una con casi 50 de mining en solo dos dias! lol
 Yo se que no, pero éste software a requerido mucho trabajo y tú puedes ayudarme a mejorarlo, por menos de lo que cuesta un café. Has una donacion ahora!
-
-¿Tienes dinero que te sobre? 
-Yo se que no, y casi puedo imaginar lo que estas pensando, pero éste software a requerido mucho trabajo y tú puedes ayudarme a mejorarlo por menos de lo que cuesta un café! Has una donacion ahora!

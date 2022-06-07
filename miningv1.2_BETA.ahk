@@ -33,6 +33,7 @@ stop := false ;Flag to stop the script, does not work well
 scriptCicles = 10000 ;Number of times that the loop of mining will be executed, i did this to prevent long time of macroing without interruption.
 GuiHwnd := 0 ;Main window handler, can be one of two options: Licence or Info
 licenceAcepted := "false" ;Flag to indicate if the licence GUI has to be open
+language := "en"
 
 ;config.ini has only one line with the word true or false.
 if FileExist("docs/config.ini") {
@@ -53,7 +54,7 @@ if FileExist("docs/config.ini") {
 if (licenceAcepted == "false"){
 	GoSub createGuiLicence
 }else if (licenceAcepted == "true"){
-	 GoSub createGuiInfo
+	 createGuiInfo("docs/info.txt")
 }else{
 	MsgBox, 3 Error. The program will finish.
 	Exitapp
@@ -91,7 +92,7 @@ watchCursor(){
 	MouseGetPos, , , id, control
 	if (GuiHwnd == id){ ;Only when the mouse is over the main window of this script
 		;Static1,2,3, and 4 are the names of some Picture Controls on the info window
-		If (control == "Static1" ||control == "Static2"||control == "Static3"||control == "Static4"){
+		If (control == "Static1" ||control == "Static2"||control == "Static3"){
 			;mouseHoverPicOn ; has to draw the tooltip if mouse is hover the picture
 			mouseHoverPicOn(control)
 			;Is onPicHover(control) a better name for this function? i am asking because i do not understand English very well. 
@@ -113,14 +114,14 @@ bAccept:
 		Exitapp
 	}
 
-	GoSub, createGuiInfo
+	createGuiInfo("docs/info.txt")
 return
 
 
-createGuiInfo:
+createGuiInfo(infotxt){
 
-	if FileExist("docs/info.txt"){
-		FileRead, FileContents, docs/info.txt
+	if FileExist(infotxt){
+		FileRead, FileContents, %infotxt%
 		if (ErrorLevel){
 			MsgBox, Error. The program will finish.
 			Exitapp
@@ -137,9 +138,25 @@ createGuiInfo:
 	link_addAsGroupBox("info")
 	Gui, info:show, NoActivate ;If i do not put NoActivate, the window shows a blue selection on all the text that is horrible to see. Is there other way to do it?
 	SetTimer, watchCursor, 100 
-return
+}
 
 
+
+;function to change the language
+changeLanguage(){
+	Global language
+	if (language == "en") {
+
+		createGuiInfo("docs/info_es_ES.txt")
+		language := "es"
+	
+	} else if (language == "es") {
+	
+		createGuiInfo("docs/info.txt")
+		language := "en"	
+	
+	}
+}
 
 
 
@@ -293,6 +310,10 @@ return
 	stop()
 	eraseAreas()
 	MsgBox, The areas has been reset.
+return
+
+!l::
+	changeLanguage()
 return
 
 !c::
