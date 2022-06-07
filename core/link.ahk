@@ -15,24 +15,20 @@
 ini_link()
 
 ini_link(){
-	Local
-	line := "Network:`nBNB Smart Chain (BEP20)`n`nWallet address:`n"
-	line .= "0x4ffe58d307aebd4c1edb26a17b77c991da0f45ff`n`nBNB Wallet: Send only BNB to this address."
-	Global metamaskAddress := "0x25C5f8ea519F29D148C356F077CdDbb983CBD65D",binance := line, discord := "thinkRand#7433 UID:681695022600814642",gitHub := "https://github.com/thinkRand"
+	Global discord := "thinkRand#7433 UID:681695022600814642", gitHub := "https://github.com/thinkRand", fiverr := "https://es.fiverr.com/abelgranados"
 }
 
 
 link_addAsGroupBox(guiName){
 	Local
-	Static controlPicDiscord := 0, controlPicBinance := 0, controlPicMetamask := 0,controlPicGMail := 0, controlPicGitHub = 0
+	Static controlPicDiscord := 0, controlPicGitHub = 0, controlPicFiverr = 0
 	GBWidth := 600
-	Gui, %guiName%:Add, GroupBox, w%GBWidth% Center cCCCCCC, Links to Contact and Donations
-	PicturesWidth := (4*40) + 10
+	Gui, %guiName%:Add, GroupBox, w%GBWidth% Center cCCCCCC, Contacts
+	PicturesWidth := (3*40) + 10 ;3 pics * 40width/each
 	xIni := round((GBWidth/2) - (PicturesWidth/2))
 	Gui, %guiName%:Add,Picture,x%xIni%+10 yp+15 w40 h40 gcontentToClipboard vcontrolPicDiscord, %A_WorkingDir%/img/discord_logo_48.png
-	Gui, %guiName%:Add,Picture,x+10 yp w40 h40 gcontentToClipboard vcontrolPicBinance, %A_WorkingDir%/img/bnb_logo_48_3.png
-	Gui, %guiName%:Add,Picture,x+10 yp w40 h40 gcontentToClipboard vcontrolPicMetamask, %A_WorkingDir%/img/metamask_logo_48_3.png
 	Gui, %guiName%:Add,Picture,x+10 yp w40 h40 gcontentToClipboard vcontrolPicGitHub, %A_WorkingDir%/img/git_logo_48.png 
+	Gui, %guiName%:Add,Picture,x+10 yp w40 h40 gcontentToClipboard vcontrolPicFiverr, %A_WorkingDir%/img/fiverr_logo_48.png
 }
 
 
@@ -46,14 +42,12 @@ mouseHoverPicOff(){
 }
 
 contentToClipboard(){
-	Local 
-	Global metamaskAddress, binance, discord, gitHub
+	Global discord, gitHub, fiverr
 	Switch A_GuiControl
 	{
 		case "controlPicDiscord": Clipboard := discord
-		case "controlPicBinance": Clipboard := binance
-		case "controlPicMetamask": Clipboard := metamaskAddress
 		case "controlPicGitHub" : Clipboard := gitHub
+		case "controlPicFiverr": Clipboard := fiverr
 		Default:
 		ToolTip, Link invalid.
 		sleep 200

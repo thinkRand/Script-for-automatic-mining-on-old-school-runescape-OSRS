@@ -14,7 +14,7 @@ Alt + v Shows/Hide the position of the inventory
 
 Instructions:
 
-the RuneLite window must be full screen and the client must be configured in modern-layout or the inventory will be dislocated causing click impressions, use ALT + v to verify. This script only works with RuneLite, it has not been tested on other clients. It has not been tested on systems prior to windows7 or versions of linux.
+This script only works with RuneLite, it has not been tested on other clients. The RuneLite window must be full screen and the client must be configured in modern-layout or the inventory will be dislocated causing click impressions, use ALT + v to verify.  It has not been tested on systems prior to windows7 or versions of linux.
 
 To start, you must define an area containing a rock with iron, cooper or clay. To define a rock follow these steps:
 
@@ -30,9 +30,11 @@ The script is designed to mine from one to three rocks and only if the character
 
 The script uses the last cell of the inventory to know if it is full, so it will not work well if you have any items in that cell (the cell below and to the right).
 
-The first cell of the inventory is to have a picaxe, that's why the minerals are thrown from cell 2 to the last one.
+The first cell of the inventory is reserved for a picaxe, that's why the minerals are thrown from cell 2 to the last one.
 
-If you see something weird and you want me to fix it, you can send the errors and suggestions to gmail or discord, the links are below
+Do you want me to fix something? My Discord link is below. 
+
+Do you want a custom script? My Fiverr profile is below.
 
 Warnings:
 
@@ -40,17 +42,12 @@ Careless use can cause a temporary or permanent ban. Use at your own risk and di
 
 Recommendations to avoid a ban:
 
-Use it on short days of between 1 to 2 hours a day or even weekly. I have not tried constant use, because honestly there is no point.
+	> Use this program between 1 to 2 hours a day maximum, or even weekly. I had not tried constant use.
 
-Avoid being reported while mining. I recommend mining in empty areas, there are a lot of places where nobody mines.
+	> Avoid being reported while mining. I recommend mining in empty areas, there are a lot of places where nobody mine.
 
-Avoid predictive behavior. Example, use the program every day at the same time without doing anything but mining. That other players do not realize that you are doing things repetitively to avoid being reported.
-
+	> You need to avoid predictive behavior, others players can realize that you are doing things repetitively and reportd you. An example of repetitive behavior is if you use the program every day at the same time without doing anything diferent of mining. 
 
 With the software you have the advantage of only having to do a few clicks, but don't leave the program unattended, that's not the point. You need to correct the behavior of the program often.
 
 Finally remember that following these rules does not guarantee that you will not be banned. Jagex is always improving its anti-bot systems, how could it be so easy? However I used this program to create 4 accounts with 70 mining in a month effectively. It is also true that I got banned with almost 50 mining in just two days! LOL
-
-Do you have money to spare?
-
-I know not, but this software has required a lot of work and you can help me improve it, for less than the cost of a coffee. Make a donation now!

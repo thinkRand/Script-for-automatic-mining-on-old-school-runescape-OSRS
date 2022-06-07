@@ -1,4 +1,4 @@
-# Old School Runescape (OSRS) mining script made with autoHotKey (AHK)
+# The best free mining script for Old School Runescape (OSRS) made with autoHotKey (AHK)
 
 This script is made in autoHotKey, it has a logic easy to understand and can be edited for anyone who have a base knowledge of ahk.
 
@@ -11,20 +11,23 @@ This macro is hable to mine itself iron ore, copper ore and clay for long time w
 This script will be usefull for you if you want afk mining while studiying or working, or if you need some help to train your mining skill and be hable of do a new quest, or simple if you do not like to do mining.
 
 ### Steps to use it
+
+0. Download RuneLite: 
+	This script does not work outside of RuneLite be default. 
 	
-1. Dowload ahk from her website:
-	To use, you need to dowload the interpreter ahk and install it on your windows, then you can run any .ahk file. https://www.autohotkey.com/
+1. Dowload AHK from his website:
+	You need to download the AHk interpreter and install it on your Windows, then you can run any .ahk file. https://www.autohotkey.com/
 	
 2. Run the script the first time:
-	When you have ahk installed just double click to run the script, the first time you will see the terms of the licence. Later you will see the instructions of use. 
+	Just double click to run the script. The first time you will see the terms of the licence. Later you will see the instructions of use. 
 
 3. Beging mining where you want:
-	Go to any place where you want to mine and use the short-cut "alt + a" two times to define an area where a rock is. Later press alt + i to initiate the mining process and you keep afk. (see instructions for more details)
+	Go to any place where you want to mine and use the short-cut "alt + a" to define an area where a rock is. Later press alt + i to initiate the mining process and you keep afk. (see instructions for more details)
 
 ### Finally
-You are the unique responsible of how you use this script, and therefore for any problem/ ban on your account using it. This script do not imitate human in a 100% , do not abuse.
+You are the unique responsible of how you use this script, and therefore for any problem/ ban on your account. This script do not imitate human on a 100% , do not abuse.
 
-I like to develop this macro with AHK and i will upgrade it over time until it become a very good mining script. I will like to hear you, hit me up on discord and tell me how is going your mining journey.
+I like to develop this macro with AHK and i will upgrade it over time. I will like to hear you, hit me up on discord and tell me if you found a bug or just how is going your mining journey.
 
 
 

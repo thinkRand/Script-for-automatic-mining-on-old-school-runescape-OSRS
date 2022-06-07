@@ -15,8 +15,7 @@ boxDraw(X, Y, W, H, bName := "inv") {
   Y += H, H *= -1
   Gui, bName:New
   Gui,+E0x20 +ToolWindow -Caption +AlwaysOnTop +LastFound HwndboxHwnd
-  ; Set window to 50% transparency+
-  WinSet,Transparent,128
+  WinSet,Transparent,128 ; Set window to 50% transparency
   Gui,Color, 0xFF0000
   Gui, Show, x%X%  y%Y% w%W% h%H% NA
 }
