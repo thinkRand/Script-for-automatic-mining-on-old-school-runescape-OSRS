@@ -14,7 +14,7 @@
 
 
 
-#include core/box.ahk
+#include core/boxDrawer.ahk
 #include core/runeLiteWindow.ahk
 #include core/delays.ahk
 #include core/cursor.ahk
@@ -32,7 +32,7 @@ ini_clientInterface(){
 loadInventory(){
 	Local
 	evalCurrentWindow()
-	Global RUNELITE_EXIST, CURRENT_WINDOW, CURRENT_PROCESS, INVENTORY,INVENTORY_EXIST
+	Global RUNELITE_EXIST, CURRENT_WINDOW, CURRENT_PROCESS, INVENTORY, INVENTORY_EXIST
 	
 	if RUNELITE_EXIST
 	{

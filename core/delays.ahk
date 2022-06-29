@@ -13,41 +13,29 @@
 ; <https://www.gnu.org/licenses/>.
 
 ;To represent an afk or distracted player.
-delayLong(increment:=0)
-{
-	Local
-	t := 0 ;time
+delayLong(increment:=0) {
+	t := 0
 	Random t, 800, 1200
 	Sleep t+increment
 }
 
 ;To represent an occasionally distraction
-delayMid(increment:=0)
-{		
-	Local
-	t := 0 ;time
+delayMid(increment:=0){		
+	t := 0 
 	Random t, 400, 800
 	Sleep t+increment
 }
 
-;To represent the usual speed that an average player have. I only based on self proof.
-delayShort(increment:=0)
-{
-	Local
-	t := 0 ;time
+;The usual speed of an average player. I only based on self proof.
+delayShort(increment:=0){
+	t := 0 
 	Random t, 250, 400
 	Sleep t+increment
 }
 
 ;To represent a hurry player, the speed when he is really concentrated
-delayMin(increment:=0)
-{
-	Local
-	t := 0 ;time
+delayMin(increment:=0){
+	t := 0 
 	Random t, 40, 100
 	Sleep t+increment
 }
-
-;Well, the delays are based on self proof, i did some evaluations on my speed. 
-;I do not know how to get sufficient data to determine what are the corrects 
-;delays of a palyer when he is hurry, distracted or in average etc.  I will like to know how can i do it.

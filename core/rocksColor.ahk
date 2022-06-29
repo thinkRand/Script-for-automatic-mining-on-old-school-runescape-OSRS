@@ -15,11 +15,11 @@
 ini_rocksColor(){
 	Global
 	;the colorFormat can be BGR or RGB. 
-	;color is an array of the three most common colors for that rock, ordered from most common at first.
+	;commonColors is an array of the three most common colors for that rock, ordered from most common at first.
 	;rawColor is not used for now. It is the color of the material on the inventory, but only the color of the point in the center.
-	_ROCKS := [{name:"Clay", color:["0x1B3B46","0x1F414E","0x2C5972"], rawColor:"", colorFormat:"BGR"}
-	,{name:"Iron", color:["0x1B2646","0x1A3E42","0x141F37"], rawColor:"0x111A32", colorFormat:"BGR"}
-	,{name:"Cooper", color:["0x345B87","0x335984","0x284365"], rawColor:"0x26466B", colorFormat:"BGR"}]
+	_ROCKS := [{name:"Clay", commonColors:["0x1B3B46","0x1F414E","0x2C5972"], rawColor:"nodefined", colorFormat:"BGR"}
+	,{name:"Iron", commonColors:["0x1B2646","0x1A3E42","0x141F37"], rawColor:"0x111A32", colorFormat:"BGR"}
+	,{name:"Cooper", commonColors:["0x345B87","0x335984","0x284365"], rawColor:"0x26466B", colorFormat:"BGR"}]
 }
 
 
