@@ -1,13 +1,7 @@
-﻿ini_box(){
-  Global
-  boxHwnd := ""
-}
-
-ini_box()
-
+﻿
+boxHwnd := ""
 
 boxDraw(X, Y, W, H, bName := "inv") {
-  Local
   Global boxHwnd
   If(W < 0)
   X += W, W *= -1

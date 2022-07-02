@@ -1,6 +1,6 @@
 ﻿; <<Copyright (C)  2022 Abel Granados>>
 
-; This file is part of miningv1.2_BETA
+; This file is part of miningv1.3
 ; This program is free software: you can redistribute it and/or modify it under the terms of the 
 ; GNU General Public License as published by the Free Software Foundation, either version 3 of 
 ; the License, or (at your option) any later version.
@@ -13,7 +13,8 @@
 ; <https://www.gnu.org/licenses/>.
 
 class _Pixel {
-	__New(x:=0,y:=0, color:=#fff){
+	
+	__New(x:=0, y:=0, color:=0xffffff){
 		this.x := x
 		this.y := y
 		this.color := color
