@@ -8,16 +8,19 @@ ALT + a 	Definir un area
 ALT + p 	Pausar 
 ALT + r 	Resetear las areas
 ALT + c 	Cerrar el script
-ALT + l		Cambiar el idioma Españo/Ingles 
+ALT + l		Cambiar el idioma Español/Inglés 
+
 Instrucciones:
 
-la ventana de RuneLite debe estar en pantalla completa obligatoriamente y el cliente debe estar configurado en modern-layout o el inventario quedara descolocado ocacionando inpresicion de clics. Este script solo funciona con RuneLite, no ha sido probado en otros clientes. No se ha probado en sistemas anteriores a windows7 o versiones de linux.
+Este script solo funciona con RuneLite, no ha sido probado en otros clientes.  No se ha probado en sistemas anteriores a windows7 o versiones de linux.
+
+La ventana de RuneLite debe estar en pantalla completa obligatoriamente y el cliente debe estar configurado en modern-layout o el inventario quedara descolocado ocacionando inpresicion de clics.
 
 Para iniciar, debes definir un area que contenga una roca con iron, cooper o clay. Para definir una roca sigue los siguientes pasos: 
 	
-Paso 1 - Busca la roca que quieres minar y coloca el puntero del mouse en una de sus esquinas, luego preciona Control + a, esto tomara la primera esquina del area. 
+	Paso 1 - Busca la roca que quieres minar y coloca el puntero del mouse en una de sus esquinas, luego preciona Control + a, esto tomara la primera esquina del area. 
 	
-Paso 2 - Preciona Control + a cuando tengas el puntero del mouse sobre la segunda esquina del area que quieres definir. 
+	Paso 2 - Preciona Control + a cuando tengas el puntero del mouse sobre la segunda esquina del area que quieres definir. 
 
 Un area se construye con dos puntos que formen un cuadrado, eso es todo.
  
@@ -47,4 +50,4 @@ Evite el comportamiento predictivo. Ejemplo, usar el programa todos los días a 
 Con el software tiene la ventaja de solo tener que hacer uno que otro clic, pero no deje al programa sin supervision, ese no es el objetivo. Es necesario que corrija el comportamiento del programa a menudo.
 
 Finalmente recuerde que seguir estas normas no garantisan que no sera baneado. Jagex siempre esta mejorando sus sistemas anti-bots, ¿Cómo podría ser tan facil?. Sin embargo yo use este programa para crear 4 cuentas con 70 de mining en un mes efectivamente. Tambien es cierto que me banearon una con casi 50 de mining en solo dos dias! lol
-Yo se que no, pero éste software a requerido mucho trabajo y tú puedes ayudarme a mejorarlo, por menos de lo que cuesta un café. Has una donacion ahora!
+

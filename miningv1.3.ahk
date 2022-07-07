@@ -62,6 +62,7 @@ if (licenceAcepted == "false"){
 	MsgBox, 3 Error. The program will finish.
 	Exitapp
 }
+
 return
 ;END OF AUTOEXECUTE SECTION
 
@@ -96,12 +97,14 @@ mining(){
 
 	if (INVENTORY_EXIST) {
 		if (MARKED_AREAS_FILLED) {
+
 			Local userDefinedRocks := MARKED_AREAS ;Assigned it an intuitive alias
 			static identifiedRocks := [] 
 			;All the rocks have to be identified, now
 			if (identifiedRocks.length() = 0){
 				identifiedRocks := identifyRocks(userDefinedRocks)
 			}
+
 			;The process will continue only if all the rocks are identified
 			if (identifiedRocks.length() = userDefinedRocks.length()){
 				stop := false ;Maybe this is not necessary, i am not sure. I planned to ensure that stop is false every time that the script run
@@ -111,23 +114,25 @@ mining(){
 				Random rockBeingMined, 1, rocksCantity
 				;Indicator of cell 28 of the inventory, it is used to know when to drop. It is bad, but work
 				;Local cellIndicator28 := {x:INVENTORY.cells[28].x + 16, y:INVENTORY.cells[28].y + 16, color:INVENTORY.baseColor} 
-				Local cell28pixelSelected := new _Pixel (INVENTORY.cells[28].x + 16, INVENTORY.cells[28] + 16, INVENTORY.baseColor)
+				Local cell28pixelSelected := new _Pixel(INVENTORY.cells[28].x + 16, INVENTORY.cells[28].y + 16, INVENTORY.baseColor)
+
 				;Main loop
-				loop, % scriptCicles 
-				{
-					Local isThereOre := isColorInArea(MARKED_AREAS[rockBeingMined], identifiedRocks[rockBeingMined].indicator.color)
+				loop, % scriptCicles {
+					
+					Local isThereOre := !identifiedRocks[rockBeingMined].selectedPixel.Changed()
 					if(isThereOre) {
 						;Move pointer to the rock
-						cursorTo(MARKED_AREAS[rockBeingMined])
+						cursorTo(identifiedRocks[rockBeingMined].area)
 						delayMin() ;its trying to simulate a human delay after reach the rock.
 						Click
+						
 						;Keep looking the rock to detect the extraction.
-						;Local mined := waitIndicatorChange(identifiedRocks[rockBeingMined].indicator)
-						Local mined :=  identifiedRocks[rockBeingMined].selectedPixel.AwaitChange()
+						Local mined :=  identifiedRocks[rockBeingMined].selectedPixel.AwaitChange(20000)
 						
 						if(mined = 1){
-							if(cell28pixelSelected.Change()) { ;If the cell 28 is fill, the inventory is filled
+							if(cell28pixelSelected.Changed()) { ;If the cell 28 is fill, the inventory is filled
 								;drop items from cell 2 to cell 28
+								MsgBox, 28 fll.
 								inventoryDropItems(2,28,1)
 							}else{
 								;cell 28 is not filled, so nothing to do now
@@ -244,7 +249,8 @@ return
 return
 
 !c::
-GuiClose:
 	MsgBox, The script was closed.
 	Exitapp
 return
+
+

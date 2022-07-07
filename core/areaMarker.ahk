@@ -43,7 +43,7 @@ makeArea(reset := ""){
 	if(currentPoint == 1){
 	
 		currentPoint++
-		MARKED_AREAS[areasCount] := new Area
+		MARKED_AREAS[areasCount] := new _Area
 		MARKED_AREAS[areasCount].x1 := x
 		MARKED_AREAS[areasCount].y1 := y
 	
@@ -91,7 +91,7 @@ isColorInArea(area, color){
 			}
 		
 		}else{
-			MsgBox Error in isColorInArea(), the color is invalid
+			MsgBox Error in isColorInArea(), the color is invalid %color%
 			return -1
 		}
 	

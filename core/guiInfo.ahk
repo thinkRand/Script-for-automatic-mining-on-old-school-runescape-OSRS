@@ -18,10 +18,13 @@ createGuiInfo(infotxt){
 	Gui, Font , , Verdana
 	Gui, info:add, Edit,0x80 ReadOnly w600  h240 Wrap cCCCCCC VScroll ,  %FileContents%
 	link_addAsGroupBox("info")
-	Gui, info:show, NoActivate ;If i do not put NoActivate, the window shows a blue selection on all the text that is horrible to see. Is there other way to do it?
+	;Gui, info:show, NoActivate ;If i do not put NoActivate, the window shows a blue selection on all the text that is horrible to see. Is there other way to do it?
+	Gui, info:show
 	SetTimer, watchCursor, 100 
 
 }
+
+
 
 ;watchCursor is a function that look over the position of the mouse constantly.
 ;It is used to draw a Tooltip over some images. Does not work well, i think that there has to be a better way to do this.

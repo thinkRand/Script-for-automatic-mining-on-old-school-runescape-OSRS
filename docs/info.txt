@@ -1,7 +1,5 @@
 Copyright (C)  2022 Abel Granados
 
-
-
 Controls:
 
 ALT + i Starts mining, first define the areas

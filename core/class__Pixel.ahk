@@ -22,6 +22,7 @@ class _Pixel {
 
 	;Look if the pixel color changed
 	Changed(){
+
 		PixelGetColor currentColor, this.x, this.y
 		if !ErrorLevel {
 			if(this.color != currentColor) {
@@ -33,20 +34,25 @@ class _Pixel {
 		}else{
 			return -1
 		}
+	
 	}
 
 	;keeps watching the color untili it changed or max time is reached
 	;return 1 if it changed, 0 otherwesi
-	AwaitChange(cicles := 100 , frequence := 200){
-		loop, %cicles% {
+	AwaitChange(t := 500) {
+		
+		frequence := 200
+		i := 1
+		While (t > frequence * i){ 
 			if(this.Changed()){
 				return 1
 			}
-			
 			Sleep, % frequence 
+			i++
 		}
 		
 		return 0
+	
 	}
 } ;class end
 
