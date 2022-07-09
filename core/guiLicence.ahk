@@ -14,11 +14,12 @@ createGuiLicence(){
 	}
 
 	Gui, licence:New, -Resize +MinimizeBox -MaximizeBox +HwndGuiHwnd , Mining_v1.3 licence
-	Gui, licence:Add, edit, vEditlicence readOnly w600 h400, %FileContents% . `n`n
-	FileContents := "" ;I think that it is better to free that memory. I am not sure if this variable will be destroyed when the label end.
+	Gui, licence:Add, edit, readOnly w600 h400, %FileContents% . `n`n
 	Gui, licence:Add, Button, w64 h32 xm gbAccept , Accept
 	Gui, licence:Show 
 
+	return
+	
 	; Button that is on the licence window, when it is pressed it has to open the Info window
 	bAccept:
 		Gui, licence:Destroy

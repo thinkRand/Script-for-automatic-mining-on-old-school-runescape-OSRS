@@ -18,6 +18,8 @@
 
 #NoTrayIcon 
 #SingleInstance, force 
+FileEncoding , UTF-8
+critical, off 
 SetWorkingDir %A_ScriptDir%
 
 #include core/cursor.ahk
@@ -30,8 +32,7 @@ SetWorkingDir %A_ScriptDir%
 #include core/class__Pixel.ahk
 
 
-FileEncoding , UTF-8
-critical, off 
+
 stop := false ;Flag to stop the script, does not work well
 scriptCicles = 10000 ;Number of times that the loop of mining will be executed, i did this to prevent long time of macroing without interruption.
 GuiHwnd := 0 ;Main window handler, can be one of two options: Licence or Info
