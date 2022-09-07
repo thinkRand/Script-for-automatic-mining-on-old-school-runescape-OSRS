@@ -1,52 +1,107 @@
-Copyright (C)  2022 Abel Granados
+	<<Copyright (C)  2022 thinkRand - Abel Granados >>
+	<<https://es.fiverr.com/abelgranados>>
 
 Controls:
 
-ALT + i Starts mining, first define the areas
-ALT + d Stops the script
-ALT + a Defines an area
-ALT + p Pauses
-ALT + r Resets areas
-ALT + c Closes the script
-ALT + v Shows/Hides the position of the inventory
-ALT + l Change language English/Spanish
+	CTRL	+ Mouse Left Button > Defines a region
+	ALT	+ i > Starts the script
+	ALT	+ c > Closes the script
+	ALT	+ s > Stops the script
+	ALT	+ v > Shows/Hides the regions (inventory and rocks)
+	ALT	+ l > Change language English/Spanish
+	ALT 	+ r > Resets regions
+	p	> Pause
+
+
+Requirements:
+
+	> Tested on Windows 7 and later.
+	> Works with RuneLite.  It has not been tested on other clients.
+	> Tested with AutoHotKey 1.1.34.03
+
+
+Client Configs:
+
+	> Client size between medium and full screen. Smallest size cause inventory misslocation.
+	> Modern-layout or the inventory may be misslocated.
+	> Ajust brightness if the rocks are not found, or if the inventory is not detected whe it is full.
+	> Reload the script if you change the RuneLite's window position
 
 Instructions:
 
-This script only works with RuneLite, it has not been tested on other clients. The RuneLite window must be full screen and the client must be configured in modern-layout or the inventory will be dislocated causing click impressions, use ALT + v to verify.  It has not been tested on systems prior to windows7 or versions of linux.
 
-To start, you must define an area containing a rock with iron, cooper or clay. To define a rock follow these steps:
+	Inside OSRS press ALT + i To initiate the program and see
+	the inventory location.
 
-Step 1 - Find the rock you want to mine and place the mouse pointer on one of its corners, then press Control + a, this will take the first corner of the area.
+	Ensure that inventory is correct located.
 
-Step 2 - Press Control + a when you have the mouse pointer over the second corner of the area you want to define.
+	To start mining you must define a region containing a rock with iron, cooper
+	or clay. To define a rock follow these steps:
 
-An area is built with two points that form a square, that's all.
+	Step 1 - Find the rock you want to mine and place the mouse pointer on one
+	of its corners, then press CTRL + Mouse Left Button, this will take the
+	first corner of the region.
+
+	Step 2 - Move the mouse pointer to the next corner and press CTRL + Mouse Left Button again.
+
+	A region is built with two points that form a rectangle, that's all.
  
-If you define a very large area, for example containing a rock and empty ground, it is likely to be "MissClicked", to avoid this make sure you create areas that are the size of rocks or smaller. You can create small areas inside a rock. This increases accuracy, but reduces the chances of correctly detecting a mineral. One benefit of doing this is to avoid areas where an object can overlap, for example pickaxes or other players.
+	If you define a very large region, for example containing a rock and empty
+	ground, it is likely to be "MissClicked", to avoid this make sure you
+	create regions that are the size of rocks or smaller. You can create
+	small regions inside a rock. This increases accuracy, but reduces the
+	chances of correctly detecting a mineral. One benefit of doing this is
+	to avoid regions where an object can overlap, for example pickaxes or
+	other players.
 
-The script is designed to mine from one to three rocks and only if the character does not move from the square where he is. Avoid creating areas that are too far apart or the character could get out of place and require repositioning.
+	The script is designed to mine from one to three rocks and only if the
+	character does not move from the square where he is. Avoid creating
+	regions that are too far apart or the character could get out of place
+	and require repositioning.
 
-The script uses the last cell of the inventory to know if it is full, so it will not work well if you have any items in that cell (the cell below and to the right).
+	The script uses the last cell of the inventory to know if it is full, so it
+	will not work well if you have any items in that cell (the cell below
+	and to the right).
 
-The first cell of the inventory is reserved for a picaxe, that's why the minerals are thrown from cell 2 to the last one.
+	The first cell of the inventory is reserved for a picaxe, that's why the
+	minerals are thrown from cell 2 to the last one.
 
-Do you want me to fix something? My Discord link is below. 
+	Do you want me to fix something? My Discord link is below. 
 
-Do you want a custom script? My Fiverr profile is below.
+	Do you want a custom script? My Fiverr profile is below.
 
 Warnings:
 
-Careless use can cause a temporary or permanent ban. Use at your own risk and discretion.
+	Careless use can cause a temporary or permanent ban. Use at your own risk
+	and discretion.
 
 Recommendations to avoid a ban:
 
-	> Use this program between 1 to 2 hours a day maximum, or even weekly. I had not tried constant use.
+	> Use this program between 1 to 2 hours a day maximum, or even weekly. I had
+	  not tried constant use.
 
-	> Avoid being reported while mining. I recommend mining in empty areas, there are a lot of places where nobody mine.
+	> Avoid being reported while mining. I recommend mining in empty areas,
+	  there are a lot of places where nobody mine.
 
-	> You need to avoid predictive behavior, others players can realize that you are doing things repetitively and reportd you. An example of repetitive behavior is if you use the program every day at the same time without doing anything diferent of mining. 
+	> You need to avoid predictive behavior, others players can realize that you
+	  are doing things repetitively and reportd you. An example of repetitive
+	  behavior is if you use the program every day at the same time without
+	  doing anything diferent of mining. 
 
-With the software you have the advantage of only having to do a few clicks, but don't leave the program unattended, that's not the point. You need to correct the behavior of the program often.
+Remarks:
 
-Finally remember that following these rules does not guarantee that you will not be banned. Jagex is always improving its anti-bot systems, how could it be so easy? However I used this program to create 4 accounts with 70 mining in a month effectively. It is also true that I got banned with almost 50 mining in just two days! LOL
+	ALT + s, stops the scrip after one cycle, that means than it is not
+	inmediately. It even doesent work while dropping items.
+	
+	The camera position can cause inconsistency. Change the camera angle if the
+	script is working weirdo.
+
+	With the software you have the advantage of only having to do a few clicks,
+	but don't leave the program unattended, that's not the point. You need
+	to correct the behavior of the program often.
+
+	Finally remember that following these rules does not guarantee that you will
+	not be banned. Jagex is always improving its anti-bot systems, how could
+	it be so easy? However I used this program to create 4 accounts with 70
+	mining in a month effectively. It is also true that I got banned with
+	almost 50 mining in just two days! LOL

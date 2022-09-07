@@ -1,6 +1,7 @@
-﻿; <<Copyright (C)  2022 Abel Granados>>
+﻿; <<Copyright (C)  2022 thinkRand - Abel Granados>>
+; <<https://es.fiverr.com/abelgranados>>
 
-; This file is part of miningv1.3
+; This file is part of free osrs mining scrip by thinkRand
 ; This program is free software: you can redistribute it and/or modify it under the terms of the 
 ; GNU General Public License as published by the Free Software Foundation, either version 3 of 
 ; the License, or (at your option) any later version.
@@ -11,6 +12,7 @@
 
 ; You should have received a copy of the GNU General Public License along with this program. If not, see 
 ; <https://www.gnu.org/licenses/>.
+
 
 class _Pixel {
 	
@@ -23,36 +25,36 @@ class _Pixel {
 	;Look if the pixel color changed
 	Changed(){
 
-		PixelGetColor currentColor, this.x, this.y
-		if !ErrorLevel {
-			if(this.color != currentColor) {
-				return 1
-			}else{
-				return 0
-			}
-		
-		}else{
-			return -1
+		PixelGetColor, currentColor, this.x, this.y
+		if (currentColor != this.color) {
+			
+			return 1
+			
 		}
-	
+				
+		return 0	
 	}
 
 	;keeps watching the color untili it changed or max time is reached
-	;return 1 if it changed, 0 otherwesi
-	AwaitChange(t := 500) {
+	;returns true if it changed, false otherwesi
+	AwaitChange(timeOut := 500) {
 		
 		frequence := 200
-		i := 1
-		While (t > frequence * i){ 
-			if(this.Changed()){
-				return 1
-			}
-			Sleep, % frequence 
-			i++
-		}
-		
-		return 0
-	
-	}
-} ;class end
+		startTime := A_TickCount
+		timeElapsed := 0
 
+		while(timeElapsed < timeOut){
+
+			if(this.Changed()){
+				return true
+			}
+
+			Sleep, frequence
+			timeElapsed := A_TickCount - startTime
+
+		}
+
+		return false
+	}
+
+} ;class end

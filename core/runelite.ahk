@@ -1,6 +1,7 @@
-﻿; <<Copyright (C)  2022 Abel Granados>>
+﻿; <<Copyright (C)  2022 thinkRand - Abel Granados>>
+; <<https://es.fiverr.com/abelgranados>>
 
-; This file is part of miningv1.3.ahk
+; This file is part of free osrs mining scrip by thinkRand
 ; This program is free software: you can redistribute it and/or modify it under the terms of the 
 ; GNU General Public License as published by the Free Software Foundation, either version 3 of 
 ; the License, or (at your option) any later version.
@@ -11,6 +12,7 @@
 
 ; You should have received a copy of the GNU General Public License along with this program. If not, see 
 ; <https://www.gnu.org/licenses/>.
+
 
 
 CURRENT_WINDOW := 0 ;To store the hwnd of the window being use

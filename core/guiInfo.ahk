@@ -1,3 +1,21 @@
+; <<Copyright (C)  2022 thinkRand - Abel Granados>>
+; <<https://es.fiverr.com/abelgranados>>
+
+; This file is part of free osrs mining scrip by thinkRand
+; This program is free software: you can redistribute it and/or modify it under the terms of the 
+; GNU General Public License as published by the Free Software Foundation, either version 3 of 
+; the License, or (at your option) any later version.
+
+; This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+; implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License 
+; for more details.
+
+; You should have received a copy of the GNU General Public License along with this program. If not, see 
+; <https://www.gnu.org/licenses/>.
+
+
+
+
 #include core/links.ahk
 
 createGuiInfo(infotxt){
@@ -13,15 +31,19 @@ createGuiInfo(infotxt){
 		Exitapp
 	}
 
-	Gui, info:New, -Resize +MinimizeBox -MaximizeBox +HwndGuiHwnd, Info
+	Gui, info:New, -Resize +MinimizeBox -MaximizeBox +HwndGuiHwnd, Free osrs mining script - by thinkRand
 	Gui, Color, 0x22262A, 0x393F46
 	Gui, Font , , Verdana
-	Gui, info:add, Edit,0x80 ReadOnly w600  h240 Wrap cCCCCCC VScroll ,  %FileContents%
+	Gui, info:add, Edit, T16  w600  h240 0x80 ReadOnly cCCCCCC 0x40,  %FileContents%
 	link_addAsGroupBox("info")
-	;Gui, info:show, NoActivate ;If i do not put NoActivate, the window shows a blue selection on all the text that is horrible to see. Is there other way to do it?
-	Gui, info:show
+	Gui, info:show, NA
 	SetTimer, watchCursor, 100 
 
+	return
+
+	InfoGuiClose:
+		Exitapp
+	return
 }
 
 
