@@ -27,7 +27,8 @@ This script will be usefull for you if you want afk mining while studiying or wo
 	Go to any place where you want to mine and use the short-cut "Ctrl + LeftClick" to define an area where a rock is. Later press Alt + i to initiate the mining process and you keep afk. (see instructions for more details)
 
 ### Initial configurations
-<p style="text-align:center" ><img alt="osrs free mining script - by thinkRand, client configs" src="img/example3.png" style="margin-left: auto; margin-right: auto;"></p>
+
+<p align="center" ><img alt="osrs free mining script - by thinkRand, client configs" src="img/example3.png" style="margin-left: auto; margin-right: auto;"></p>
  
 
 1. Ajust Brigthness as needed:
