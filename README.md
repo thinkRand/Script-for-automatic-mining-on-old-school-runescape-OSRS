@@ -30,9 +30,9 @@ This script will be usefull for you if you want afk mining while studiying or wo
 
 1. Ajust Brigthness as needed:
 	The script use color match to found rocks and other things, the brigthness configuration can modify the colors suficient enought to make the script fail.
-<center> 
-	![osrs free mining script - by thinkRand, client configs](img/example3.png) 
-</center>
+<img alt="osrs free mining script - by thinkRand, client configs" src="img/example3.png" style="margin:auto" > 
+	
+
 
 2. Ajust layout to Modern-layout
 
