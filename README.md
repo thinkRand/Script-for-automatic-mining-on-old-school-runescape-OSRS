@@ -1,4 +1,14 @@
-# The best free mining script for Old School Runescape (OSRS) made with autoHotKey (AHK)
+<p align="center">
+	<img src="https://img.shields.io/github/license/thinkRand/Script-for-automatic-mining-on-old-school-runescape-OSRS" >
+	<img src="https://img.shields.io/github/stars/thinkRand/Script-for-automatic-mining-on-old-school-runescape-OSRS" >
+	<img src="https://img.shields.io/badge/Status-Developing-brightgreen" >
+
+</p>
+
+
+
+
+<h1> The best free mining script for Old School Runescape (OSRS) made with autoHotKey (AHK)</h1>
 
 ![osrs free mining script - by thinkRand, mining Clay](img/example1.png)
 
@@ -20,10 +30,13 @@ This script will be usefull for you if you want afk mining while studiying or wo
 1. Dowload AHK from his website:
 	You need to download the AHk interpreter and install it on your Windows, then you can run any .ahk file. https://www.autohotkey.com/
 	
-2. Run the script the first time:
-	Just double click to run the script. The first time you will see the terms of the licence. Later you will see the instructions of use. 
+2. Download the script:
+	Either cloning the code or using the release link.
 
-3. Beging mining where you want:
+4. Run the script the first time:
+	Just double click to run the script. You will see the terms of the licence the first time and later you will see the instructions of use. 
+
+5. Beging mining where you want:
 	Go to any place where you want to mine and use the short-cut "Ctrl + LeftClick" to define an area where a rock is. Later press Alt + i to initiate the mining process and you keep afk. (see instructions for more details)
 
 ### Initial configurations
