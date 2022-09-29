@@ -16,9 +16,8 @@
 
 
 ;innerBorder is a option to strech the area, making it more precice. If you put negative values then you make the area more bigger, to make more imprecice
-;The speed is set to 15 because i think ta is a good value to asimisly human mousemove, but does not work well because the speed is constant
 
-cursorTo(region, innerBorder := 0, speed := 15){
+cursorTo(region, innerBorder := 0, speed := 2){
 	
 	if IsObject(region) {
 

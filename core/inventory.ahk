@@ -15,13 +15,7 @@
 
 
 
-
-#include core/boxDrawer.ahk
 #include core/runelite.ahk
-#include core/delays.ahk
-#include core/cursor.ahk
-
-
 
 inventoryExist := false ;Flag to indicate if the inventory is already created
 inventory := {}

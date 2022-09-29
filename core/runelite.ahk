@@ -30,12 +30,11 @@ evalCurrentWindow(){
 	
 	if (processName = "RuneLite.exe"){	
 		
-		MsgBox The window %vTitle%  is running with the script now.
 		CURRENT_WINDOW := currentWindow
 		CURRENT_PROCESS := processName
 		RUNELITE_EXIST := true
 	
 	}else{
-		MsgBox The window %vTitle% is ivalid.
+		MsgBox The window %vTitle% is ivalid, has to be a RuneLite window
 	}
 }

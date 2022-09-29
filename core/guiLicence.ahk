@@ -31,7 +31,7 @@ createGuiLicence(){
 		Exitapp
 	}
 
-	Gui, licence:New, -Resize +MinimizeBox -MaximizeBox +HwndGuiHwnd , Mining_v1.3 licence
+	Gui, licence:New, -Resize +MinimizeBox -MaximizeBox +HwndGuiHwnd , free osrs mining scrip - by thinkRand licence
 	Gui, licence:Add, edit, readOnly w600 h400, %FileContents% . `n`n
 	Gui, licence:Add, Button, w64 h32 xm gbAccept , Accept
 	Gui, licence:Show 

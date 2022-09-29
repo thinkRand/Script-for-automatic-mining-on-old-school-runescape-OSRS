@@ -27,9 +27,9 @@ boxDraw(X:=0, Y:=0, W:=0, H:=0) {
 boxDrawAll(){
 
   Global boxesIds
-    loop, % boxesIds.Count(){
+    loop, % boxesIds.Count() {
       boxId := boxesIds[A_Index]
-      Gui, %boxId%:Show
+      Gui, %boxId%:Show, NA
     }
 
 }

@@ -95,28 +95,3 @@ getRegion(n){
 
 	return 0 ;Region does not exist
 }
-
-
-isColorInArea(area, color){
-
-	if isObject(area){
-		if (color is xdigit) {
-		
-			cX := cY := 0
-			pixelSearch, cX, cY, area.x1, area.y1, area.x2, area.y2, color,,fast
-			if(!ErrorLevel){
-				return 1
-			} else {
-				return 0
-			}
-		
-		}else{
-			MsgBox Error in isColorInArea(), the color is invalid %color%
-			return -1
-		}
-	
-	} else{
-		MsgBox Error in isColorInArea(), the area is invalid
-		return -1
-	}
-}
