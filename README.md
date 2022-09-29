@@ -54,16 +54,6 @@ This script will be usefull for you if you want afk mining while studiying or wo
 3. Beging mining where you want:
 	Go to any place where you want to mine and use the short-cut "Ctrl + LeftClick" to define an area where a rock is. Later press Alt + i to initiate the mining process and you keep afk. (see instructions for more details)
 
-### Initial configurations
-
-1. Ajust Brigthness as needed:
-	The script use color match to found rocks and other things, the brigthness configuration can modify the colors suficient enought to make the script fail.
-
-2. Ajust layout to Modern-layout
-
-
-3. The angle of the camera can be a factor. It is better to maintain it vertical.
-
 ### Finally
 You are the unique responsible of how you use this script, and therefore for any problem/ ban on your account. This script do not imitate human on a 100%.
 
