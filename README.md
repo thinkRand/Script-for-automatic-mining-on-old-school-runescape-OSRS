@@ -6,8 +6,6 @@
 </p>
 
 
-
-
 <h1> The best free mining script for Old School Runescape (OSRS) made with autoHotKey (AHK)</h1>
 <p align="center">
 	<img src="resources/miningClay.png" alt="osrs free mining script - by thinkRand, mining Clay">
@@ -15,11 +13,11 @@
 
 This script is made in autoHotKey, it has a logic easy to understand and can be edited for anyone who have a base knowledge of ahk.
 
-It is free software, under the terms of gpl-3. You will notice that it is open source and you have right to use, edit, copy etc, under the terms of the licence.	
+You will notice that this free software is open source and you have right to use, edit, copy etc, under the terms of the licence. A copy of the licence is distributed with the software.	
 
 ### What this ahk mining script do
 
-This macro is hable to mine itself iron ore, copper ore and clay for long time whitout interruption, in any location of OSRS, with litte configuration. It work with color detection, trying to imitate human logic doing mining. It do not use relfection or inyection, like others bots do. 
+This macro is hable to mine itself iron ore, copper ore and clay for long time whitout interruption, in any location of OSRS, with litte configuration. You can add more rocks too. This script work with color detection, trying to imitate human logic doing mining. It do not use relfection or inyection, like others bots do. 
 
 This script will be usefull for you if you want afk mining while studiying or working, or if you need some help to train your mining skill and be hable of do a new quest, or simple if you do not like to do mining.
 
@@ -67,6 +65,6 @@ This script will be usefull for you if you want afk mining while studiying or wo
 3. The angle of the camera can be a factor. It is better to maintain it vertical.
 
 ### Finally
-You are the unique responsible of how you use this script, and therefore for any problem/ ban on your account. This script do not imitate human on a 100% , do not abuse.
+You are the unique responsible of how you use this script, and therefore for any problem/ ban on your account. This script do not imitate human on a 100%.
 
 I like to develop this macro with AHK and i will upgrade it over time. I will like to hear you, hit me up on discord and tell me if you found a bug or just how is going your mining journey.
