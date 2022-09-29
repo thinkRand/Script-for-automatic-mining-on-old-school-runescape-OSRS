@@ -9,10 +9,9 @@
 
 
 <h1> The best free mining script for Old School Runescape (OSRS) made with autoHotKey (AHK)</h1>
-
-![osrs free mining script - by thinkRand, mining Clay](img/example1.png)
-
-![osrs free mining script - by thinkRand, mining Clay](img/example1.png)
+<p align="center">
+	<img src="resources/miningClay.png" alt="osrs free mining script - by thinkRand, mining Clay">
+</p>
 
 This script is made in autoHotKey, it has a logic easy to understand and can be edited for anyone who have a base knowledge of ahk.
 
@@ -43,7 +42,7 @@ This script will be usefull for you if you want afk mining while studiying or wo
 
 ### Initial configurations
 
-<p align="center" ><img alt="osrs free mining script - by thinkRand, client configs" src="img/example3.png" style="margin-left: auto; margin-right: auto;"></p>
+<p align="center" ><img alt="osrs free mining script - by thinkRand, display settings" src="resources/displaySettings.png" style="margin-left: auto; margin-right: auto;"></p>
  
 
 1. Ajust Brigthness as needed:
@@ -54,7 +53,6 @@ This script will be usefull for you if you want afk mining while studiying or wo
 
 3. The angle of the camera can be a factor. It is better to maintain it vertical.
 
-<<<<<<< HEAD
 3. Beging mining where you want:
 	Go to any place where you want to mine and use the short-cut "Ctrl + LeftClick" to define an area where a rock is. Later press Alt + i to initiate the mining process and you keep afk. (see instructions for more details)
 
@@ -68,16 +66,7 @@ This script will be usefull for you if you want afk mining while studiying or wo
 
 3. The angle of the camera can be a factor. It is better to maintain it vertical.
 
-=======
->>>>>>> e4db99f7c1b21f3137eb1b0bd735d73691771242
-
 ### Finally
 You are the unique responsible of how you use this script, and therefore for any problem/ ban on your account. This script do not imitate human on a 100% , do not abuse.
 
 I like to develop this macro with AHK and i will upgrade it over time. I will like to hear you, hit me up on discord and tell me if you found a bug or just how is going your mining journey.
-
-<<<<<<< HEAD
-Dont forget to leave a star.
-=======
-Dont forget to leave a star.
->>>>>>> e4db99f7c1b21f3137eb1b0bd735d73691771242
