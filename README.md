@@ -1,7 +1,6 @@
 <p align="center">
 	<img src="https://img.shields.io/github/license/thinkRand/Script-for-automatic-mining-on-old-school-runescape-OSRS" >
 	<img src="https://img.shields.io/github/stars/thinkRand/Script-for-automatic-mining-on-old-school-runescape-OSRS" >
-	<img src="https://img.shields.io/badge/Status-Developing-brightgreen" >
 
 </p>
 
